@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Islet – a Dynamic Island for your Mac</title>
+<style>
+:root{--bg:#050507;--fg:#f5f5f7;--mut:#8e8e99;--card:#14141a}
+@media(prefers-color-scheme:light){:root{--bg:#f5f5f7;--fg:#111;--mut:#666;--card:#fff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Inter",sans-serif;text-align:center}
+.hero{padding:0 20px 60px}
+.notch{margin:0 auto;background:#000;border-radius:0 0 30px 30px;width:180px;height:30px;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 14px;overflow:hidden;animation:grow 7s ease-in-out infinite}
+@keyframes grow{0%,12%{width:180px;height:30px}25%,70%{width:420px;height:150px;padding-top:34px}85%,100%{width:180px;height:30px}}
+.notch span{font-size:13px;white-space:nowrap}
+h1{font-size:clamp(40px,8vw,72px);margin:50px 0 8px;letter-spacing:-2px}
+p.sub{color:var(--mut);max-width:520px;margin:0 auto 28px;font-size:19px}
+.btn{display:inline-block;background:#0a84ff;color:#fff;text-decoration:none;font-weight:600;padding:14px 30px;border-radius:999px;font-size:17px}
+.note{color:var(--mut);font-size:13px;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;max-width:900px;margin:0 auto;padding:0 20px 40px}
+.card{background:var(--card);border-radius:20px;padding:22px;text-align:left}.card b{display:block;font-size:17px;margin-bottom:4px}.card small{color:var(--mut)}
+ol{max-width:480px;margin:0 auto;text-align:left;color:var(--mut)}footer{padding:40px;color:var(--mut);font-size:13px}
+</style></head><body>
+<div class="hero">
+<div class="notch"><span>🎙️ 🎥</span><span>🎵 ▮▮▮</span></div>
+<h1>Islet</h1>
+<p class="sub">A Dynamic Island for your MacBook notch. Live indicators, music, calendar, focus timer and more.</p>
+<a class="btn" id="dl" href="https://github.com/YOUR_USERNAME/Islet/releases/latest/download/Islet.dmg">Download for macOS</a>
+<div class="note">macOS 14 Sonoma or later · Free</div>
+</div>
+<div class="grid">
+<div class="card"><b>🔴 Privacy indicators</b><small>Screen recording, camera and mic, shown live.</small></div>
+<div class="card"><b>⇪ Caps Lock</b><small>Never type in the wrong case again.</small></div>
+<div class="card"><b>🎵 Spotify control</b><small>Artwork, seek, play, skip.</small></div>
+<div class="card"><b>📅 Calendar &amp; tasks</b><small>Pick any day, tick off reminders.</small></div>
+<div class="card"><b>⏱ Focus timer</b><small>15/25/45 min with live countdown.</small></div>
+<div class="card"><b>🔊 Volume &amp; brightness</b><small>Slick HUD in the island.</small></div>
+<div class="card"><b>🔋 Battery &amp; charging</b><small>Pop-up when you plug in.</small></div>
+<div class="card"><b>🎧 Bluetooth</b><small>AirPods and accessories connect alerts.</small></div>
+</div>
+<ol><li>Open <b>Islet.dmg</b> and drag Islet to Applications.</li>
+<li>First launch: right-click Islet → <b>Open</b> → Open.</li>
+<li>Allow Calendar, Reminders, Spotify and Bluetooth when asked.</li></ol>
+<footer>Made with ♥ · Hover the notch to expand</footer>
+</body></html>
